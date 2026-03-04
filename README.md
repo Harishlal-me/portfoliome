@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Harishlal.me Portfolio
 
-## Getting Started
+A high-performance, visually stunning developer portfolio built with Next.js, React, TailwindCSS, and Three.js. This project features premium 3D animations, custom UI interactions, and live GitHub statistics integrations, designed with a futuristic neon-dark aesthetic.
 
-First, run the development server:
+## Features 🚀
+
+- **True 3D Gyroscope Tech Orbit System**: Built using `react-three-fiber` and `drei`. A central glowing chip is surrounded by orbital rings rotating on multiple axes (30°, 60°, 90°) containing interactive floating tech stack icons (Python, React, TypeScript, etc.).
+- **Live GitHub Statistics Engine**: Automatically fetches and parses total repository counts, stargazer totals, top language usage, and activity data directly from the GitHub API. It displays this data through sleek odometer-style animated counters.
+- **Premium Micro-Interactions**: Features a custom-built Animated Cursor with spring-physics bounding and clickable glow states, Magnetic Buttons that gently pull towards the cursor, and responsive Framer Motion page transition effects.
+- **Modern Minimal Orbit Clock**: A continuous, smoothly rotating orbital clock ring nestled in the Navigation Bar that tracks and displays the user's localized time with elegant neon accents.
+- **Enhanced Aesthetic UI**: Includes a custom lightweight, thin, neon CSS Scrollbar layout and an incredibly dense interactive particle network background grid powered by `react-tsparticles`.
+
+## Tech Stack 🛠️
+
+- **Framework**: Next.js (App Router), React
+- **Styling**: TailwindCSS, Direct CSS (Globals)
+- **3D Engine**: Three.js, @react-three/fiber, @react-three/drei
+- **Animations**: Framer Motion, react-countup, react-tsparticles
+- **Icons**: lucide-react, react-icons
+- **Deployment**: Vercel Edge Network
+
+## Getting Started 💻
+
+First, ensure you have Node.js installed, then clone the repository:
+
+```bash
+git clone https://github.com/Harishlal-me/portfoliome.git
+cd portfoliome
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development & Deployment ⚡
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is configured natively for seamless Vercel deployment. 
 
-## Learn More
+```bash
+# To run a production compilation test locally:
+npm run build 
 
-To learn more about Next.js, take a look at the following resources:
+# To run the local server on the compiled build:
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For live deployments, connect this repository to a Vercel dashboard project and enable Continuous Deployment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact ✉️
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- LinkedIn: [harishlal-me](https://linkedin.com/in/harishlal-me)
+- Email: meharishlal@gmail.com
+- Website: [harishlal-me.vercel.app](https://harishlal-me.vercel.app)
