@@ -73,7 +73,7 @@ export const Contact = () => {
                                             name="name"
                                             required
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors"
-                                            placeholder="John Doe"
+                                            placeholder="Your Name"
                                         />
                                     </div>
                                     <div>
@@ -84,7 +84,7 @@ export const Contact = () => {
                                             name="email"
                                             required
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors"
-                                            placeholder="john@example.com"
+                                            placeholder="Your Email"
                                         />
                                     </div>
                                     <div>
