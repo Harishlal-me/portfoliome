@@ -36,7 +36,7 @@ export const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-sm text-neutral-500 font-medium">Email Me</h4>
-                                        <a href="mailto:meharishlal@gmail.com" className="text-lg hover:underline decoration-neon-cyan">meharishlal@gmail.com</a>
+                                        <a href="mailto:harishlaloff@gmail.com" className="text-lg hover:underline decoration-neon-cyan">harishlaloff@gmail.com</a>
                                     </div>
                                 </div>
 
@@ -54,14 +54,14 @@ export const Contact = () => {
 
                         <div className="bg-neutral-950 rounded-2xl p-6 md:p-8 border border-neutral-800">
                             <form
-                                action="https://formsubmit.co/meharishlal@gmail.com"
+                                action="https://formsubmit.co/harishlaloff@gmail.com"
                                 method="POST"
                                 className="space-y-6"
                             >
                                 {/* Formsubmit Configuration */}
-                                <input type="hidden" name="_subject" value="New Message from Portfolio!" />
+                                <input type="hidden" name="_subject" value="New message from Harishlal Portfolio" />
                                 <input type="hidden" name="_captcha" value="false" />
-                                <input type="hidden" name="_template" value="box" />
+                                <input type="hidden" name="_template" value="table" />
                                 <input type="hidden" name="_next" value="https://harishlal-me.vercel.app/" />
 
                                 <div className="space-y-4">
