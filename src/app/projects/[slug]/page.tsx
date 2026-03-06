@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 // Mock database for case studies
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const projectData: Record<string, any> = {
     "cyberbullying-detection": {
         title: "Cyberbullying Detection System with BERT",

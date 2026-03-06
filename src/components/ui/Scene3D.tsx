@@ -17,6 +17,7 @@ const TechNode = ({
     color,
     orbitY = 0
 }: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     icon: any,
     label: string,
     radius: number,
@@ -91,6 +92,7 @@ const OrbitRing = ({
 }: {
     radius: number,
     tilt: [number, number, number],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     nodes: any[]
 }) => {
     const ringRef = useRef<THREE.Group>(null);

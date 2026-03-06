@@ -36,9 +36,10 @@ export const GitHubStats = () => {
                 let totalStars = 0;
                 const languageCounts: Record<string, number> = {};
                 let mostActiveRepo = "";
-                let maxPushes = 0; // Rough metric without full event API
+                // let maxPushes = 0; // Rough metric without full event API
 
                 if (Array.isArray(reposData)) {
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     reposData.forEach((repo: any) => {
                         totalStars += repo.stargazers_count;
 

@@ -22,9 +22,9 @@ export const Contact = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
                         <div className="space-y-8">
                             <div>
-                                <h2 className="text-3xl md:text-5xl font-bold mb-4">Let's Connect</h2>
+                                <h2 className="text-3xl md:text-5xl font-bold mb-4">Let&apos;s Connect</h2>
                                 <p className="text-neutral-400 text-lg max-w-md">
-                                    I'm always open to discussing new projects, creative ideas or
+                                    I&apos;m always open to discussing new projects, creative ideas or
                                     opportunities to be part of your visions.
                                 </p>
                             </div>

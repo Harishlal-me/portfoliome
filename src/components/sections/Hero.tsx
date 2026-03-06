@@ -14,6 +14,7 @@ export const Hero = () => {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setMounted(true);
     }, []);
 
@@ -44,7 +45,7 @@ export const Hero = () => {
                     <div className="space-y-4">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
                             <span className="block text-neutral-400 text-2xl md:text-3xl mb-4 font-medium tracking-normal">
-                                Hello, I'm
+                                Hello, I&apos;m
                             </span>
                             <AnimatedText text="Harishlal ME" className="justify-center md:justify-start" delay={1} />
                         </h1>

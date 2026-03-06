@@ -9,27 +9,9 @@ const achievements = [
         category: "Research",
         icon: BookOpen,
         date: "Current Focus",
-        description: "Preparing an academic paper based on my Cyberbullying Detection System. Focused on the novel application of high-recall BERT fine-tuning for safety-critical edge cases.",
+        description: "Preparing an academic research paper based on my Cyberbullying Detection System. Focused on high-recall BERT fine-tuning for safety-critical NLP moderation tasks.",
         color: "text-neon-cyan",
         bg: "bg-neon-cyan/10"
-    },
-    {
-        title: "Internal Smart India Hackathon (SIH)",
-        category: "Competition",
-        icon: Trophy,
-        date: "Participant",
-        description: "Competed in the Internal phase of Smart India Hackathon, developing rapid prototype solutions for real-world municipal problems under high-pressure conditions.",
-        color: "text-neon-pink",
-        bg: "bg-neon-pink/10"
-    },
-    {
-        title: "Academic Excellence",
-        category: "University",
-        icon: Award,
-        date: "Consistent",
-        description: "Secured a CGPA of 9.51/10 up to the 3rd Semester, alongside maintaining a 9.0 CGPA in the AI & ML Minor specialization.",
-        color: "text-neon-purple",
-        bg: "bg-neon-purple/10"
     }
 ];
 
@@ -48,7 +30,7 @@ export const Achievements = () => {
                         <div className="h-px bg-neutral-800 flex-1 ml-4 hidden sm:block"></div>
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 max-w-md mx-auto gap-6">
                         {achievements.map((item, idx) => (
                             <motion.div
                                 key={idx}

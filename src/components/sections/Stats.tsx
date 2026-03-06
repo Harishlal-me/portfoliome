@@ -5,9 +5,8 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
     { value: 3, label: "Major Projects", suffix: "+" },
-    { value: 94.5, label: "Max Recall (%)", suffix: "%", decimals: 1 },
     { value: 10, label: "Technologies", suffix: "+" },
-    { value: 9.74, label: "CGPA", suffix: "", decimals: 2 },
+    { value: 9.51, label: "CGPA", suffix: "", decimals: 2 },
 ];
 
 const Counter = ({ from = 0, to, decimals = 0, duration = 2 }: { from?: number, to: number, decimals?: number, duration?: number }) => {
@@ -51,7 +50,7 @@ export const Stats = () => {
     return (
         <section className="py-20 relative border-t border-b border-neutral-900 bg-neutral-950/20">
             <div className="container px-4 md:px-6 mx-auto max-w-5xl">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                     {stats.map((stat, idx) => (
                         <motion.div
                             key={idx}
