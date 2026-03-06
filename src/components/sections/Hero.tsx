@@ -55,8 +55,7 @@ export const Hero = () => {
                             transition={{ delay: 0.8, duration: 0.5 }}
                             className="max-w-[600px] text-lg md:text-xl text-neutral-400 pt-4"
                         >
-                            AI/ML Researcher focused on safety-critical NLP systems.
-                            Developing modern web applications with cutting-edge technologies.
+                            Second-year B.Tech CSE student (CGPA 9.51) specializing in NLP, full-stack development, and machine learning. Built safety-critical BERT models achieving 94.5% recall and currently preparing an ICWSM 2026 research submission.
                         </motion.p>
                     </div>
 
@@ -72,12 +71,14 @@ export const Hero = () => {
                                 meharishlal@gmail.com
                             </Button>
                         </MagneticButton>
-                        <MagneticButton>
-                            <Button variant="secondary" size="lg">
-                                <Download className="w-4 h-4" />
-                                Download CV
-                            </Button>
-                        </MagneticButton>
+                        <a href="/Harishlal_ME_Resume.pdf" download="Harishlal_ME_Resume.pdf" className="pointer-events-auto">
+                            <MagneticButton>
+                                <Button variant="secondary" size="lg">
+                                    <Download className="w-4 h-4" />
+                                    Download CV
+                                </Button>
+                            </MagneticButton>
+                        </a>
                     </motion.div>
 
                     <motion.div

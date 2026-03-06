@@ -6,23 +6,23 @@ import { Github, ExternalLink, Code2 } from "lucide-react";
 const projects = [
     {
         title: "Cyberbullying Detection System with BERT",
-        description: "Fine-tuned BERT achieving 94.5% recall and 94.19% F1-score with safety-critical focus on minimizing false negatives. Deployed as a Streamlit web app with bias analysis, threshold calibration, and interpretability features. Work extended into ICWSM 2026 research paper submission.",
+        description: "Fine-tuned a BERT model achieving 94.5% recall and 94.19% F1-score for cyberbullying detection with focus on minimizing false negatives. Deployed as a Streamlit web application and extended into an ICWSM 2026 research submission.",
         tech: ["PyTorch", "BERT", "Hugging Face Transformers", "Python", "Streamlit"],
         github: "https://github.com/Harishlal-me/cyberbullydectetion",
         demo: null,
         color: "neon-purple",
     },
     {
-        title: "CampusSafe – Campus Lost & Found",
-        description: "Full-stack platform with normalized 11-table MySQL schema and JWT-secured REST API. Implements Jaccard similarity matching engine (40–95% confidence scoring), admin dashboard, and automated institutional PDF reports.",
-        tech: ["React 18", "Node.js", "Express.js", "MySQL 8.0", "JWT", "PDFKit", "Tailwind CSS"],
+        title: "CampusSafe – Campus Lost & Found Management System",
+        description: "Full-stack campus lost-and-found management platform with intelligent item matching and admin workflow automation. Built with a normalized 11-table MySQL schema, JWT-secured REST API, and role-based access control for students and admins. Implements a Jaccard similarity matching engine (40–95% confidence scoring) and an admin dashboard with automated institutional PDF reports.",
+        tech: ["React", "Node.js", "Express.js", "MySQL", "JWT", "Tailwind CSS", "PDFKit"],
         github: "https://github.com/Harishlal-me/campussafe",
         demo: null,
         color: "neon-cyan",
     },
     {
         title: "AI-Driven Stock Analysis System",
-        description: "End-to-end ML pipeline (feature engineering → training → live inference). Deployed Streamlit dashboard with visualizations for 6 equities (AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA). Built to explore AI techniques applied to stock market data.",
+        description: "End-to-end machine learning pipeline (feature engineering → model training → live inference) deployed as a Streamlit dashboard with interactive visualizations for six major equities (AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA). Built for educational purposes to explore AI techniques applied to financial data.",
         tech: ["Python", "Streamlit", "Plotly", "Scikit-learn"],
         github: "https://github.com/Harishlal-me/hstockpredictorl",
         demo: null,
