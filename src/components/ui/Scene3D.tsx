@@ -220,7 +220,7 @@ const TechOrbitSystem = () => {
 
 export const Scene3D = () => {
     return (
-        <div className="w-full h-[500px] md:h-full md:absolute md:top-0 md:right-0 md:w-[55%] -z-5 pointer-events-none md:pointer-events-auto flex items-center justify-center">
+        <div className="w-full h-[500px] md:h-full md:absolute md:top-0 md:-right-8 lg:-right-24 md:w-[55%] -z-5 pointer-events-none md:pointer-events-auto flex items-center justify-center">
             <Canvas
                 camera={{ position: [0, 0, 8], fov: 45 }}
                 className="w-full h-full"
