@@ -53,13 +53,25 @@ export const Contact = () => {
                         </div>
 
                         <div className="bg-neutral-950 rounded-2xl p-6 md:p-8 border border-neutral-800">
-                            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                            <form
+                                action="https://formsubmit.co/meharishlal@gmail.com"
+                                method="POST"
+                                className="space-y-6"
+                            >
+                                {/* Formsubmit Configuration */}
+                                <input type="hidden" name="_subject" value="New Message from Portfolio!" />
+                                <input type="hidden" name="_captcha" value="false" />
+                                <input type="hidden" name="_template" value="box" />
+                                <input type="hidden" name="_next" value="https://harishlal-me.vercel.app/" />
+
                                 <div className="space-y-4">
                                     <div>
                                         <label htmlFor="name" className="block text-sm font-medium text-neutral-400 mb-1">Name</label>
                                         <input
                                             type="text"
                                             id="name"
+                                            name="name"
+                                            required
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors"
                                             placeholder="John Doe"
                                         />
@@ -69,6 +81,8 @@ export const Contact = () => {
                                         <input
                                             type="email"
                                             id="email"
+                                            name="email"
+                                            required
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors"
                                             placeholder="john@example.com"
                                         />
@@ -77,13 +91,15 @@ export const Contact = () => {
                                         <label htmlFor="message" className="block text-sm font-medium text-neutral-400 mb-1">Message</label>
                                         <textarea
                                             id="message"
+                                            name="message"
+                                            required
                                             rows={4}
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors resize-none"
                                             placeholder="Tell me about your project..."
                                         />
                                     </div>
                                 </div>
-                                <Button variant="primary" className="w-full">
+                                <Button variant="primary" type="submit" className="w-full">
                                     <Send className="w-4 h-4 mr-2" /> Send Message
                                 </Button>
                             </form>
