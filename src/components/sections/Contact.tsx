@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Linkedin, Mail, Github, Send } from "lucide-react";
+import { Linkedin, Mail, Github, Send, Phone } from "lucide-react";
 
 export const Contact = () => {
     return (
@@ -47,6 +47,16 @@ export const Contact = () => {
                                     <div>
                                         <h4 className="text-sm text-neutral-500 font-medium">Connect on LinkedIn</h4>
                                         <a href="https://linkedin.com/in/harishlal-me" target="_blank" rel="noopener noreferrer" className="text-lg hover:underline decoration-neon-purple">harishlal-me</a>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center gap-4 text-neutral-300 hover:text-green-400 transition-colors group">
+                                    <div className="w-12 h-12 rounded-full bg-neutral-950 flex items-center justify-center border border-neutral-800 group-hover:border-green-400/50">
+                                        <Phone className="w-5 h-5" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-sm text-neutral-500 font-medium">Call Me</h4>
+                                        <a href="tel:+917598620239" className="text-lg hover:underline decoration-green-400">+91 7598620239</a>
                                     </div>
                                 </div>
                             </div>
