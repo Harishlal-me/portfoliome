@@ -105,7 +105,7 @@ export const Contact = () => {
                                             required
                                             rows={4}
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors resize-none"
-                                            placeholder="Tell me about your project..."
+                                            placeholder="Tell me about your project, idea, or opportunity..."
                                         />
                                     </div>
                                 </div>
