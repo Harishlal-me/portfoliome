@@ -6,7 +6,7 @@ import { Github, ExternalLink, Code2 } from "lucide-react";
 const projects = [
     {
         title: "Cyberbullying Detection System with BERT",
-        description: "Fine-tuned a BERT model achieving 94.5% recall and 94.19% F1-score for cyberbullying detection with focus on minimizing false negatives. Deployed as a Streamlit web application and extended into an ICWSM 2026 research submission.",
+        description: "Fine-tuned a BERT model achieving 94.5% recall and 94.19% F1-score for cyberbullying detection with a safety-critical focus on minimizing false negatives. Deployed as a Streamlit web application and extended into an ICWSM 2026 research submission.",
         tech: ["PyTorch", "BERT", "Hugging Face Transformers", "Python", "Streamlit"],
         github: "https://github.com/Harishlal-me/cyberbullydectetion",
         demo: null,
@@ -14,7 +14,7 @@ const projects = [
     },
     {
         title: "CampusSafe – Campus Lost & Found Management System",
-        description: "Full-stack campus lost-and-found management platform with intelligent item matching and admin workflow automation. Built with a normalized 11-table MySQL schema, JWT-secured REST API, and role-based access control for students and admins. Implements a Jaccard similarity matching engine (40–95% confidence scoring) and an admin dashboard with automated institutional PDF reports.",
+        description: "Full-stack campus lost-and-found management platform with intelligent item matching and automated admin workflows.\n\nBuilt a full-stack system with a normalized 11-table MySQL schema, JWT-secured REST API, and role-based access control for students and admins. Implemented a Jaccard similarity matching engine (40–95% confidence scoring) and an admin dashboard with automated institutional PDF reports.",
         tech: ["React", "Node.js", "Express.js", "MySQL", "JWT", "Tailwind CSS", "PDFKit"],
         github: "https://github.com/Harishlal-me/campussafe",
         demo: null,

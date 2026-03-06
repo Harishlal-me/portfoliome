@@ -131,9 +131,9 @@ export const Experience = () => {
                                 </div>
 
                                 <div className="md:col-span-3">
-                                    <h3 className="text-xl font-bold text-white mb-1">Bachelor of Technology in CSE</h3>
+                                    <h3 className="text-xl font-bold text-white mb-1">B.Tech – Computer Science & Engineering</h3>
                                     <div className="text-neon-pink font-medium mb-3 flex items-center gap-2">
-                                        <GraduationCap className="w-4 h-4" /> SRM Institute of Science and Technology
+                                        <GraduationCap className="w-4 h-4" /> SRM Institute of Science and Technology, Chennai
                                     </div>
                                     <div className="flex items-center gap-2 mb-4 text-xs text-neutral-500 md:hidden font-mono">
                                         <Calendar className="w-3 h-3" /> Expected Graduation: 2028
@@ -142,11 +142,11 @@ export const Experience = () => {
                                         <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-pink/50 transition-colors">
                                             <div className="text-xs text-neutral-500 mb-1">CGPA</div>
                                             <div className="text-white font-bold text-lg">9.51 / 10</div>
-                                            <div className="text-xs text-neutral-500">(up to 3rd sem)</div>
+                                            <div className="text-xs text-neutral-500">(up to 3rd semester)</div>
                                         </div>
                                         <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-pink/50 transition-colors">
                                             <div className="text-xs text-neutral-500 mb-1">Minor</div>
-                                            <div className="text-white font-bold text-sm leading-tight">AI &amp; ML<br /><span className="text-neutral-400 font-normal text-xs">CGPA: 9.0</span></div>
+                                            <div className="text-white font-bold text-sm leading-tight">Artificial Intelligence &amp; Machine Learning<br /><span className="text-neutral-400 font-normal text-xs">(CGPA 9.0)</span></div>
                                         </div>
                                     </div>
                                 </div>
