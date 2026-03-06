@@ -60,7 +60,7 @@ export const Experience = () => {
                                 <div className="md:col-span-3 pb-8">
                                     <h3 className="text-xl font-bold text-white mb-1">Undergraduate Research Assistant (UROP)</h3>
                                     <div className="text-neon-cyan font-medium mb-3 flex items-center gap-2">
-                                        <Briefcase className="w-4 h-4" /> SRM IST Chennai Advisor: Dr. G. Balamurugan
+                                        <Briefcase className="w-4 h-4" /> SRM IST — Advisor: Dr. G. Balamurugan
                                     </div>
                                     <div className="flex items-center gap-2 mb-4 text-xs text-neutral-500 md:hidden font-mono">
                                         <Calendar className="w-3 h-3" /> Nov 2025 - Jan 2026
