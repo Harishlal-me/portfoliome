@@ -30,7 +30,7 @@ export const GitHubActivity = () => {
                             <h3 className="text-xl font-bold text-white mb-6 self-start relative z-10 w-full border-b border-neutral-800 pb-4">GitHub Stats</h3>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="https://github-readme-stats.vercel.app/api?username=Harishlal-me&theme=tokyonight&show_icons=true&hide_border=true&bg_color=00000000"
+                                src="https://github-readme-stats-eight-theta.vercel.app/api?username=Harishlal-me&theme=tokyonight&show_icons=true&hide_border=true&bg_color=00000000"
                                 alt="Harishlal's GitHub Stats"
                                 className="w-full max-w-md pointer-events-none drop-shadow-xl relative z-10"
                             />
@@ -48,7 +48,7 @@ export const GitHubActivity = () => {
                             <h3 className="text-xl font-bold text-white mb-6 self-start relative z-10 w-full border-b border-neutral-800 pb-4">Top Languages</h3>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harishlal-me&theme=tokyonight&layout=compact&hide_border=true&bg_color=00000000"
+                                src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Harishlal-me&theme=tokyonight&layout=compact&hide_border=true&bg_color=00000000"
                                 alt="Harishlal's Top Languages"
                                 className="w-full max-w-sm pointer-events-none drop-shadow-xl relative z-10"
                             />
