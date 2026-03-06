@@ -49,14 +49,20 @@ export const Hero = () => {
                             <AnimatedText text="Harishlal ME" className="justify-center md:justify-start" delay={1} />
                         </h1>
 
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.8, duration: 0.5 }}
-                            className="max-w-[600px] text-lg md:text-xl text-neutral-400 pt-4"
+                            className="pt-4"
                         >
-                            Second-year B.Tech CSE student (CGPA 9.51) specializing in NLP, full-stack development, and machine learning. Built safety-critical BERT models achieving 94.5% recall and currently preparing an ICWSM 2026 research submission.
-                        </motion.p>
+                            <h2 className="text-xl md:text-2xl text-neon-cyan font-medium mb-4">
+                                AI / ML Developer &middot; NLP &middot; Full-Stack Engineer
+                            </h2>
+                            <p className="max-w-[600px] text-lg text-neutral-400 leading-relaxed">
+                                Building intelligent AI systems and scalable full-stack products.<br className="hidden md:block" />
+                                Second-year Computer Science student at SRM IST (CGPA 9.51) currently preparing an ICWSM 2026 research submission.
+                            </p>
+                        </motion.div>
                     </div>
 
                     <motion.div
@@ -65,17 +71,19 @@ export const Hero = () => {
                         transition={{ delay: 1, duration: 0.5 }}
                         className="flex flex-col sm:flex-row items-center md:justify-start gap-4 pt-4 pointer-events-auto"
                     >
-                        <MagneticButton>
-                            <Button variant="primary" size="lg">
-                                <Mail className="w-4 h-4" />
-                                meharishlal@gmail.com
-                            </Button>
-                        </MagneticButton>
-                        <a href="/Harishlal_ME_Resume.pdf" download="Harishlal_ME_Resume.pdf" className="pointer-events-auto">
+                        <a href="/Harishlal_ME_Resume.pdf" download="Harishlal_ME_Resume.pdf" className="pointer-events-auto w-full sm:w-auto">
                             <MagneticButton>
-                                <Button variant="secondary" size="lg">
-                                    <Download className="w-4 h-4" />
+                                <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                                    <Download className="w-4 h-4 mr-2" />
                                     Download CV
+                                </Button>
+                            </MagneticButton>
+                        </a>
+                        <a href="#contact" className="pointer-events-auto w-full sm:w-auto">
+                            <MagneticButton>
+                                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
+                                    <Mail className="w-4 h-4 mr-2" />
+                                    Contact Me
                                 </Button>
                             </MagneticButton>
                         </a>
@@ -94,6 +102,10 @@ export const Hero = () => {
                         <a href="https://linkedin.com/in/harishlal-me" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
                             <Linkedin className="w-6 h-6" />
                             <span className="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="mailto:meharishlal@gmail.com" className="text-neutral-400 hover:text-white transition-colors">
+                            <Mail className="w-6 h-6" />
+                            <span className="sr-only">Email</span>
                         </a>
                     </motion.div>
                 </div>

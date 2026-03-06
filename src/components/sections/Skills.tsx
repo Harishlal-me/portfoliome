@@ -1,38 +1,54 @@
 "use client";
 
 import { motion } from "framer-motion";
+import {
+    SiCplusplus, SiPython, SiJavascript,
+    SiReact, SiNodedotjs, SiExpress,
+    SiOpencv, SiTensorflow, SiPytorch,
+    SiGit, SiDocker, SiLinux
+} from "react-icons/si";
 
 const skillsData = [
     {
         category: "Languages",
-        items: ["Python", "Java", "JavaScript", "HTML/CSS"],
         color: "text-neon-cyan",
         borderColor: "hover:border-neon-cyan/50",
+        items: [
+            { name: "C++", icon: SiCplusplus },
+            { name: "Python", icon: SiPython },
+            { name: "JavaScript", icon: SiJavascript },
+        ]
     },
     {
-        category: "Machine Learning / NLP",
-        items: ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face Transformers", "BERT"],
+        category: "Frameworks",
         color: "text-neon-purple",
         borderColor: "hover:border-neon-purple/50",
+        items: [
+            { name: "React", icon: SiReact },
+            { name: "Node", icon: SiNodedotjs },
+            { name: "Express", icon: SiExpress },
+        ]
     },
     {
-        category: "Web & Backend",
-        items: ["React", "Node.js", "Express.js", "FastAPI", "REST APIs", "JWT"],
+        category: "AI / ML",
         color: "text-neon-pink",
         borderColor: "hover:border-neon-pink/50",
-    },
-    {
-        category: "Databases",
-        items: ["MySQL", "PostgreSQL", "Schema Design", "Query Optimization"],
-        color: "text-neon-cyan",
-        borderColor: "hover:border-neon-cyan/50",
+        items: [
+            { name: "OpenCV", icon: SiOpencv },
+            { name: "TensorFlow", icon: SiTensorflow },
+            { name: "PyTorch", icon: SiPytorch },
+        ]
     },
     {
         category: "Tools",
-        items: ["Docker", "Streamlit", "Git", "Plotly", "PDFKit"],
-        color: "text-neon-purple",
-        borderColor: "hover:border-neon-purple/50",
-    },
+        color: "text-neon-cyan",
+        borderColor: "hover:border-neon-cyan/50",
+        items: [
+            { name: "Git", icon: SiGit },
+            { name: "Docker", icon: SiDocker },
+            { name: "Linux", icon: SiLinux },
+        ]
+    }
 ];
 
 export const Skills = () => {
@@ -61,7 +77,7 @@ export const Skills = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, margin: "-100px" }}
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
                     >
                         {skillsData.map((skillGroup, idx) => (
                             <motion.div
@@ -71,23 +87,26 @@ export const Skills = () => {
                                     show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
                                 whileHover={{ y: -5 }}
-                                className={`p-6 rounded-2xl bg-neutral-900 border border-neutral-800 transition-colors ${skillGroup.borderColor}`}
+                                className={`p-6 rounded-2xl bg-neutral-900 border border-neutral-800 transition-colors ${skillGroup.borderColor} flex flex-col items-center sm:items-start`}
                             >
                                 <h3 className={`text-xl font-bold mb-6 ${skillGroup.color}`}>
                                     {skillGroup.category}
                                 </h3>
-                                <div className="flex flex-wrap gap-3">
+                                <div className="flex flex-col gap-4 w-full">
                                     {skillGroup.items.map((item, itemIdx) => (
-                                        <motion.span
+                                        <motion.div
                                             key={itemIdx}
-                                            initial={{ opacity: 0, scale: 0.8 }}
-                                            whileInView={{ opacity: 1, scale: 1 }}
+                                            initial={{ opacity: 0, x: -10 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
                                             viewport={{ once: true }}
-                                            transition={{ delay: 0.2 + (itemIdx * 0.05) }}
-                                            className="px-3 py-1.5 text-sm font-medium rounded-full bg-neutral-800/50 text-neutral-300 border border-neutral-700/50 hover:bg-neutral-800 transition-colors"
+                                            transition={{ delay: 0.2 + (itemIdx * 0.1) }}
+                                            className="flex items-center gap-3 px-4 py-3 rounded-xl bg-neutral-800/40 border border-neutral-700/50 hover:bg-neutral-800 hover:border-neutral-600 transition-all group"
                                         >
-                                            {item}
-                                        </motion.span>
+                                            <item.icon className={`w-6 h-6 text-neutral-400 group-hover:${skillGroup.color.replace('text-', 'text-')} transition-colors`} />
+                                            <span className="font-medium text-neutral-300 group-hover:text-white transition-colors">
+                                                {item.name}
+                                            </span>
+                                        </motion.div>
                                     ))}
                                 </div>
                             </motion.div>
