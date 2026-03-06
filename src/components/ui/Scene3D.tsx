@@ -127,7 +127,7 @@ const TechOrbitSystem = () => {
     // Orbit Ring Definitions for Gyroscope Effect - Adjusted speeds for 20-40s per rotation (speed ~0.15 to 0.3 radians/sec)
     const rings = useMemo(() => [
         {
-            radius: 1.5,
+            radius: 2.1,
             tilt: [Math.PI / 6, 0, Math.PI / 8] as [number, number, number],
             nodes: [
                 { icon: SiPython, label: "Machine Learning & Backend", speed: 0.2, offset: 0, color: "#3776AB", orbitY: 0 },
@@ -135,7 +135,7 @@ const TechOrbitSystem = () => {
             ]
         },
         {
-            radius: 1.9,
+            radius: 2.6,
             tilt: [Math.PI / 2.5, 0, -Math.PI / 6] as [number, number, number],
             nodes: [
                 { icon: SiReact, label: "Frontend Framework", speed: -0.15, offset: 0, color: "#61DAFB", orbitY: 0 },
@@ -143,7 +143,7 @@ const TechOrbitSystem = () => {
             ]
         },
         {
-            radius: 2.3,
+            radius: 3.1,
             tilt: [-Math.PI / 3, 0, Math.PI / 4] as [number, number, number],
             nodes: [
                 { icon: SiDocker, label: "Containerization", speed: 0.18, offset: 0, color: "#2496ED", orbitY: 0 },
@@ -179,17 +179,20 @@ const TechOrbitSystem = () => {
                 {/* Central AI/Profile Core */}
                 <group ref={coreRef}>
                     {/* Glowing aura behind image */}
-                    <Sphere args={[0.55, 32, 32]}>
+                    <Sphere args={[0.85, 32, 32]}>
                         <meshBasicMaterial color="#00f0ff" transparent opacity={0.1} />
                     </Sphere>
-                    <Sphere args={[0.65, 32, 32]}>
+                    <Sphere args={[1.0, 32, 32]}>
                         <meshBasicMaterial color="#7000ff" transparent opacity={0.05} />
                     </Sphere>
 
                     {/* The HTML Profile Image rendering natively to bypass complex 3D texturing for UI purposes */}
                     <Html center zIndexRange={[50, 0]} className="pointer-events-none">
-                        <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full shadow-[0_0_50px_rgba(0,240,255,0.3)] border-2 border-neon-cyan/40 bg-neutral-900 p-1 flex items-center justify-center pointer-events-auto group overflow-hidden">
-                            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-neon-purple/20 to-neon-cyan/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+                        <div
+                            className="relative w-48 h-48 md:w-52 md:h-52 rounded-full border-[3px] border-cyan-400/50 bg-neutral-900 p-1 flex items-center justify-center pointer-events-auto group overflow-hidden"
+                            style={{ boxShadow: '0 0 40px rgba(0,255,255,0.25), 0 0 80px rgba(0,200,255,0.15)' }}
+                        >
+                            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-neon-purple/20 to-neon-cyan/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 animate-pulse" />
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src="/profilepic.jpeg"
