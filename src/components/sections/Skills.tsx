@@ -4,23 +4,35 @@ import { motion } from "framer-motion";
 
 const skillsData = [
     {
-        category: "ML/AI Frameworks",
-        items: ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face", "BERT"],
-        color: "text-neon-purple",
-        borderColor: "hover:border-neon-purple/50",
-    },
-    {
         category: "Languages",
-        items: ["Python", "Java", "HTML (Intermediate)"],
+        items: ["Python", "Java", "JavaScript", "HTML/CSS"],
         color: "text-neon-cyan",
         borderColor: "hover:border-neon-cyan/50",
     },
     {
-        category: "Web & Tools",
-        items: ["React", "FastAPI", "Docker", "OpenCV", "Streamlit"],
+        category: "Machine Learning / NLP",
+        items: ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face Transformers", "BERT"],
+        color: "text-neon-purple",
+        borderColor: "hover:border-neon-purple/50",
+    },
+    {
+        category: "Web & Backend",
+        items: ["React", "Node.js", "Express.js", "FastAPI", "REST APIs", "JWT"],
         color: "text-neon-pink",
         borderColor: "hover:border-neon-pink/50",
-    }
+    },
+    {
+        category: "Databases",
+        items: ["MySQL", "PostgreSQL", "Schema Design", "Query Optimization"],
+        color: "text-neon-cyan",
+        borderColor: "hover:border-neon-cyan/50",
+    },
+    {
+        category: "Tools",
+        items: ["Docker", "Streamlit", "Git", "Plotly", "PDFKit"],
+        color: "text-neon-purple",
+        borderColor: "hover:border-neon-purple/50",
+    },
 ];
 
 export const Skills = () => {
@@ -49,7 +61,7 @@ export const Skills = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, margin: "-100px" }}
-                        className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                     >
                         {skillsData.map((skillGroup, idx) => (
                             <motion.div

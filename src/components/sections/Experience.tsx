@@ -66,7 +66,7 @@ export const Experience = () => {
                                         <Calendar className="w-3 h-3" /> Nov 2025 - Jan 2026
                                     </div>
                                     <ul className="space-y-2 text-neutral-400 text-sm leading-relaxed list-disc list-inside">
-                                        <li>Conducting research on safety-critical NLP systems and preparing a paper for ICWSM 2026 submission.</li>
+                                        <li>Researching safety-critical NLP systems and designing recall-focused evaluation pipelines for content moderation.</li>
                                         <li>Preparing manuscript for ICWSM 2026 conference submission.</li>
                                     </ul>
                                 </div>
@@ -107,7 +107,7 @@ export const Experience = () => {
                                         <Calendar className="w-3 h-3" /> Jan 2025 - Mar 2025
                                     </div>
                                     <ul className="space-y-2 text-neutral-400 text-sm leading-relaxed list-disc list-inside">
-                                        <li>Completed 10-week intensive program in AI/ML fundamentals with hands-on training in industry-standard frameworks and best practices.</li>
+                                        <li>Completed 10-week intensive program in ML model development, evaluation, and deployment best practices.</li>
                                     </ul>
                                 </div>
                             </motion.div>
@@ -138,14 +138,15 @@ export const Experience = () => {
                                     <div className="flex items-center gap-2 mb-4 text-xs text-neutral-500 md:hidden font-mono">
                                         <Calendar className="w-3 h-3" /> Expected Graduation: 2028
                                     </div>
-                                    <div className="flex gap-4">
+                                    <div className="flex gap-4 flex-wrap">
                                         <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-pink/50 transition-colors">
                                             <div className="text-xs text-neutral-500 mb-1">CGPA</div>
-                                            <div className="text-white font-bold text-lg">9.74 / 10</div>
+                                            <div className="text-white font-bold text-lg">9.51 / 10</div>
+                                            <div className="text-xs text-neutral-500">(up to 3rd sem)</div>
                                         </div>
                                         <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-pink/50 transition-colors">
                                             <div className="text-xs text-neutral-500 mb-1">Minor</div>
-                                            <div className="text-white font-bold text-sm leading-tight">Artificial Intelligence<br />& Machine Learning</div>
+                                            <div className="text-white font-bold text-sm leading-tight">AI &amp; ML<br /><span className="text-neutral-400 font-normal text-xs">CGPA: 9.0</span></div>
                                         </div>
                                     </div>
                                 </div>

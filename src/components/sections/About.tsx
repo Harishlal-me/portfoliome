@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { User, Activity, BrainCircuit } from "lucide-react";
+import { Activity, BrainCircuit, Code2, FlaskConical } from "lucide-react";
 
 export const About = () => {
     return (
@@ -34,16 +34,13 @@ export const About = () => {
                             className="space-y-6 text-neutral-400 text-lg leading-relaxed"
                         >
                             <motion.p variants={{ hidden: { opacity: 0, x: -20 }, show: { opacity: 1, x: 0 } }}>
-                                I am an <strong className="text-white font-medium">AI/ML researcher</strong> focused on safety-critical NLP systems.
-                                My work centers on developing intelligent systems that not only perform exceptionally but also adhere to principles of responsible AI.
+                                I am a <strong className="text-white font-medium">second-year B.Tech CSE undergraduate</strong> (CGPA 9.51) at SRM IST, Chennai — with hands-on experience in full-stack development, database systems, and machine learning.
                             </motion.p>
                             <motion.p variants={{ hidden: { opacity: 0, x: -20 }, show: { opacity: 1, x: 0 } }}>
-                                Recently, I developed a BERT-based cyberbullying detection system achieving <strong className="text-neon-purple font-medium">94.5% recall</strong>,
-                                minimizing false negatives in critical environments.
+                                Particularly strong in NLP — built safety-critical BERT-based systems achieving <strong className="text-neon-purple font-medium">94.5% recall</strong> with an active <strong className="text-neon-cyan font-medium">ICWSM 2026</strong> research submission.
                             </motion.p>
                             <motion.p variants={{ hidden: { opacity: 0, x: -20 }, show: { opacity: 1, x: 0 } }}>
-                                I am currently an active UROP researcher, preparing a manuscript for an <strong className="text-neon-cyan font-medium">ICWSM 2026</strong> conference submission,
-                                while also building scalable and performant production ML systems.
+                                Keen to contribute to engineering and research challenges across software, data, and AI domains.
                             </motion.p>
                         </motion.div>
 
@@ -69,8 +66,8 @@ export const About = () => {
                                 <div className="w-12 h-12 rounded-full bg-neon-cyan/10 flex items-center justify-center mb-4 text-neon-cyan group-hover:scale-110 transition-transform">
                                     <BrainCircuit className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-white font-semibold mb-2">Safety-Critical ML</h3>
-                                <p className="text-sm text-neutral-500">Optimizing for robustness and recall in high-stakes environments.</p>
+                                <h3 className="text-white font-semibold mb-2">Safety-Critical NLP</h3>
+                                <p className="text-sm text-neutral-500">BERT-based systems with recall-focused evaluation for content moderation.</p>
                             </motion.div>
 
                             <motion.div
@@ -79,10 +76,22 @@ export const About = () => {
                                 className="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800 hover:border-neon-purple/50 transition-colors group"
                             >
                                 <div className="w-12 h-12 rounded-full bg-neon-purple/10 flex items-center justify-center mb-4 text-neon-purple group-hover:scale-110 transition-transform">
-                                    <Activity className="w-6 h-6" />
+                                    <Code2 className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-white font-semibold mb-2">System Performance</h3>
-                                <p className="text-sm text-neutral-500">Proficient in PyTorch, TensorFlow, and full-stack integration.</p>
+                                <h3 className="text-white font-semibold mb-2">Full-Stack Development</h3>
+                                <p className="text-sm text-neutral-500">React, Node.js, Express.js, FastAPI, MySQL &amp; PostgreSQL.</p>
+                            </motion.div>
+
+                            <motion.div
+                                variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+                                whileHover={{ y: -5 }}
+                                className="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800 hover:border-neon-pink/50 transition-colors group col-span-2"
+                            >
+                                <div className="w-12 h-12 rounded-full bg-neon-pink/10 flex items-center justify-center mb-4 text-neon-pink group-hover:scale-110 transition-transform">
+                                    <FlaskConical className="w-6 h-6" />
+                                </div>
+                                <h3 className="text-white font-semibold mb-2">UROP Research · ICWSM 2026</h3>
+                                <p className="text-sm text-neutral-500">Active manuscript submission for ICWSM 2026 on safety-critical NLP &amp; content moderation under Dr. G. Balamurugan.</p>
                             </motion.div>
                         </motion.div>
                     </div>

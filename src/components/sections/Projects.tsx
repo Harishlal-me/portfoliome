@@ -5,26 +5,29 @@ import { Github, ExternalLink, Code2 } from "lucide-react";
 
 const projects = [
     {
-        title: "AI-Driven Stock Analysis System",
-        description: "End-to-end web application with real-time ML inference and interactive visualizations for 6 major stocks (AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA).",
-        tech: ["Python", "Streamlit", "Plotly", "Scikit-learn", "Machine Learning"],
-        github: "https://github.com/Harishlal-me/hstockpredictorl",
-        color: "neon-cyan",
-    },
-    {
-        title: "Cyberbullying Detection System",
-        description: "Fine-tuned BERT achieving 94.5% recall and 94.19% F1-score on cyberbullying detection with safety-critical focus on minimizing false negatives.",
-        tech: ["PyTorch", "BERT", "NLP", "Python", "Safety-Critical ML"],
+        title: "Cyberbullying Detection System with BERT",
+        description: "Fine-tuned BERT achieving 94.5% recall and 94.19% F1-score with safety-critical focus on minimizing false negatives. Deployed as a Streamlit web app with bias analysis, threshold calibration, and interpretability features. Work extended into ICWSM 2026 research paper submission.",
+        tech: ["PyTorch", "BERT", "Hugging Face Transformers", "Python", "Streamlit"],
         github: "https://github.com/Harishlal-me/cyberbullydectetion",
+        demo: null,
         color: "neon-purple",
     },
     {
-        title: "Smart Traffic Violation Detection",
-        description: "Real-time automated traffic violation detection system achieving 90%+ target accuracy for red-light, speed, and lane violations (Ongoing Development).",
-        tech: ["YOLOv8", "OpenCV", "EasyOCR", "FastAPI", "React", "PostgreSQL"],
-        github: "https://github.com/Harishlal-me/traffic-violation-system",
+        title: "CampusSafe – Campus Lost & Found",
+        description: "Full-stack platform with normalized 11-table MySQL schema and JWT-secured REST API. Implements Jaccard similarity matching engine (40–95% confidence scoring), admin dashboard, and automated institutional PDF reports.",
+        tech: ["React 18", "Node.js", "Express.js", "MySQL 8.0", "JWT", "PDFKit", "Tailwind CSS"],
+        github: "https://github.com/Harishlal-me/campussafe",
+        demo: null,
+        color: "neon-cyan",
+    },
+    {
+        title: "AI-Driven Stock Analysis System",
+        description: "End-to-end ML pipeline (feature engineering → training → live inference). Deployed Streamlit dashboard with visualizations for 6 equities (AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA). Built to explore AI techniques applied to stock market data.",
+        tech: ["Python", "Streamlit", "Plotly", "Scikit-learn"],
+        github: "https://github.com/Harishlal-me/hstockpredictorl",
+        demo: null,
         color: "neon-pink",
-    }
+    },
 ];
 
 import { useRef } from "react";
