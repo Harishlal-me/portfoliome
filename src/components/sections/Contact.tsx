@@ -1,10 +1,41 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Linkedin, Mail, Github, Send, Phone } from "lucide-react";
+import { Linkedin, Mail, Send, Phone, CheckCircle2 } from "lucide-react";
 
 export const Contact = () => {
+    const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setStatus("submitting");
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/harishlaloff@gmail.com", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setStatus("success");
+                form.reset();
+                setTimeout(() => setStatus("idle"), 5000); // Reset after 5s
+            } else {
+                setStatus("error");
+            }
+        } catch (error) {
+            console.error(error);
+            setStatus("error");
+        }
+    };
     return (
         <section id="contact" className="py-20 relative">
             <div className="container px-4 md:px-6 mx-auto max-w-5xl">
@@ -62,17 +93,27 @@ export const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="bg-neutral-950 rounded-2xl p-6 md:p-8 border border-neutral-800">
+                        <div className="bg-neutral-950 rounded-2xl p-6 md:p-8 border border-neutral-800 relative">
+                            {status === "success" ? (
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    className="absolute inset-0 flex flex-col items-center justify-center bg-neutral-950/90 rounded-2xl backdrop-blur-sm z-20"
+                                >
+                                    <CheckCircle2 className="w-16 h-16 text-neon-cyan mb-4" />
+                                    <h3 className="text-2xl font-bold text-white mb-2 text-center">Message sent successfully</h3>
+                                    <p className="text-neutral-400 text-center">I&apos;ll get back to you soon.</p>
+                                </motion.div>
+                            ) : null}
+
                             <form
-                                action="https://formsubmit.co/harishlaloff@gmail.com"
-                                method="POST"
+                                onSubmit={handleSubmit}
                                 className="space-y-6"
                             >
                                 {/* Formsubmit Configuration */}
                                 <input type="hidden" name="_subject" value="New message from Harishlal Portfolio" />
                                 <input type="hidden" name="_captcha" value="false" />
                                 <input type="hidden" name="_template" value="table" />
-                                <input type="hidden" name="_next" value="https://harishlal-me.vercel.app/" />
 
                                 <div className="space-y-4">
                                     <div>
@@ -82,7 +123,8 @@ export const Contact = () => {
                                             id="name"
                                             name="name"
                                             required
-                                            className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors"
+                                            disabled={status === "submitting"}
+                                            className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors disabled:opacity-50"
                                             placeholder="Your Name"
                                         />
                                     </div>
@@ -93,7 +135,8 @@ export const Contact = () => {
                                             id="email"
                                             name="email"
                                             required
-                                            className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors"
+                                            disabled={status === "submitting"}
+                                            className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors disabled:opacity-50"
                                             placeholder="Your Email"
                                         />
                                     </div>
@@ -104,13 +147,20 @@ export const Contact = () => {
                                             name="message"
                                             required
                                             rows={4}
-                                            className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors resize-none"
+                                            disabled={status === "submitting"}
+                                            className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors resize-none disabled:opacity-50"
                                             placeholder="Tell me about your project, idea, or opportunity..."
                                         />
                                     </div>
                                 </div>
-                                <Button variant="primary" type="submit" className="w-full">
-                                    <Send className="w-4 h-4 mr-2" /> Send Message
+
+                                {status === "error" && (
+                                    <p className="text-red-400 text-sm">Something went wrong. Please try again or email me directly.</p>
+                                )}
+
+                                <Button variant="primary" type="submit" className="w-full" disabled={status === "submitting"}>
+                                    <Send className="w-4 h-4 mr-2" />
+                                    {status === "submitting" ? "Sending..." : "Send Message"}
                                 </Button>
                             </form>
                         </div>
