@@ -2,19 +2,20 @@
 
 import { motion } from "framer-motion";
 import { Activity, BrainCircuit, Code2, FlaskConical } from "lucide-react";
+import { TypewriterText } from "@/components/ui/TypewriterText";
 
 export const About = () => {
     return (
         <section id="about" className="py-20 relative">
             <div className="container px-4 md:px-6 mx-auto max-w-5xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-12 flex items-center gap-4">
-                        <span className="text-neon-cyan">01.</span> About Me
+                        <span className="text-neon-cyan">01.</span> <TypewriterText text="About Me" />
                         <div className="h-px bg-neutral-800 flex-1 ml-4 block sm:hidden md:block"></div>
                     </h2>
 

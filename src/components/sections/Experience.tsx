@@ -2,19 +2,20 @@
 
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap, Calendar } from "lucide-react";
+import { TypewriterText } from "@/components/ui/TypewriterText";
 
 export const Experience = () => {
     return (
         <section id="experience" className="py-20 relative bg-neutral-950/50">
             <div className="container px-4 md:px-6 mx-auto max-w-5xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center gap-4">
-                        <span className="text-neon-cyan">04.</span> Experience & Education
+                        <span className="text-neon-cyan">04.</span> <TypewriterText text="Experience & Education" />
                         <div className="h-px bg-neutral-800 flex-1 ml-4 hidden sm:block"></div>
                     </h2>
 

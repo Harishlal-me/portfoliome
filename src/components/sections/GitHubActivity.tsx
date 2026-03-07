@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { GitBranch, GitCommit, Star, FolderGit2 } from "lucide-react"; // Note: using closest lucide icons
+import { TypewriterText } from "@/components/ui/TypewriterText";
 
 export const GitHubActivity = () => {
     const [stats, setStats] = useState({
@@ -52,13 +53,13 @@ export const GitHubActivity = () => {
         <section id="github" className="py-20 relative bg-neutral-950/20 perspective-1000">
             <div className="container px-4 md:px-6 mx-auto max-w-5xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-12 flex items-center gap-4">
-                        <span className="text-neon-pink">06.</span> Open Source Activity
+                        <span className="text-neon-pink">06.</span> <TypewriterText text="Open Source Activity" />
                         <div className="h-px bg-neutral-800 flex-1 ml-4 hidden sm:block"></div>
                     </h2>
 

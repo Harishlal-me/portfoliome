@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Linkedin, Mail, Send, Phone, CheckCircle2 } from "lucide-react";
+import { TypewriterText } from "@/components/ui/TypewriterText";
 
 export const Contact = () => {
     const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -40,10 +41,10 @@ export const Contact = () => {
         <section id="contact" className="py-20 relative">
             <div className="container px-4 md:px-6 mx-auto max-w-5xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8 }}
                     className="bg-neutral-900 border border-neutral-800 rounded-3xl p-8 md:p-12 relative overflow-hidden"
                 >
                     {/* Decorative glow */}
@@ -53,7 +54,9 @@ export const Contact = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
                         <div className="space-y-8">
                             <div>
-                                <h2 className="text-3xl md:text-5xl font-bold mb-4">Let&apos;s Connect</h2>
+                                <h2 className="text-3xl md:text-5xl font-bold mb-4">
+                                    <TypewriterText text="Let's Connect" />
+                                </h2>
                                 <p className="text-neutral-400 text-lg max-w-md">
                                     I&apos;m always open to discussing new projects, creative ideas or
                                     opportunities to be part of your visions.

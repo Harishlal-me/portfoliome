@@ -7,6 +7,7 @@ import {
     SiOpencv, SiTensorflow, SiPytorch,
     SiGit, SiDocker, SiLinux
 } from "react-icons/si";
+import { TypewriterText } from "@/components/ui/TypewriterText";
 
 const skillsData = [
     {
@@ -56,13 +57,13 @@ export const Skills = () => {
         <section id="skills" className="py-20 relative bg-neutral-950/50">
             <div className="container px-4 md:px-6 mx-auto max-w-5xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-12 flex items-center gap-4">
-                        <span className="text-neon-purple">02.</span> Technical Skills
+                        <span className="text-neon-purple">02.</span> <TypewriterText text="Technical Skills" />
                         <div className="h-px bg-neutral-800 flex-1 ml-4 hidden sm:block"></div>
                     </h2>
 

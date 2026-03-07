@@ -5,6 +5,7 @@ import { Github, ExternalLink, ArrowRight, ShieldCheck, Building2, TrendingUp } 
 import Link from "next/link";
 import { useRef } from "react";
 import { useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
+import { TypewriterText } from "@/components/ui/TypewriterText";
 
 const projects = [
     {
@@ -81,7 +82,7 @@ const TiltCard = ({ children, color, idx }: { children: React.ReactNode, color: 
                 rotateX,
                 transformStyle: "preserve-3d",
             }}
-            initial={{ opacity: 0, scale: 0.9, y: 30 }}
+            initial={{ opacity: 0, scale: 0.9, y: 40 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: idx * 0.15, duration: 0.5 }}
@@ -112,13 +113,13 @@ export const Projects = () => {
         <section id="projects" className="py-20 relative perspective-1000">
             <div className="container px-4 md:px-6 mx-auto max-w-6xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-12 flex items-center gap-4">
-                        <span className="text-neon-pink">03.</span> Featured Projects
+                        <span className="text-neon-pink">03.</span> <TypewriterText text="Featured Projects" />
                         <div className="h-px bg-neutral-800 flex-1 ml-4 hidden sm:block"></div>
                     </h2>
 
