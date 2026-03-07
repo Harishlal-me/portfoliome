@@ -128,6 +128,13 @@ export const Experience = () => {
                                 {/* Timeline node */}
                                 <div className="absolute left-[-37px] md:static md:col-span-1 flex justify-center mt-1">
                                     <div className="w-[10px] h-[10px] rounded-full bg-neon-pink shadow-[0_0_10px_#ff007f] ring-4 ring-neutral-950 group-hover:scale-150 transition-transform z-10" />
+                                    {/* Vertical Line for Desktop */}
+                                    <motion.div
+                                        initial={{ scaleY: 0 }}
+                                        whileInView={{ scaleY: 1 }}
+                                        transition={{ duration: 1, ease: "easeInOut" }}
+                                        className="hidden md:block absolute top-6 bottom-[-3rem] w-px bg-neutral-800 -z-10 left-[26%] origin-top"
+                                    />
                                 </div>
 
                                 <div className="md:col-span-3">
@@ -148,7 +155,7 @@ export const Experience = () => {
                         </motion.div>
 
                         {/* Minor */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, show: { opacity: 1, y: 0, transition: { duration: 0.6 } } }} className="relative pl-8 md:pl-0 mt-12">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, show: { opacity: 1, y: 0, transition: { duration: 0.6 } } }} className="relative pl-8 md:pl-0">
                             <div className="md:hidden absolute left-0 top-0 bottom-0 w-px bg-neutral-800"></div>
 
                             <motion.div
@@ -156,8 +163,7 @@ export const Experience = () => {
                                 className="relative md:grid md:grid-cols-5 gap-8 items-start group"
                             >
                                 <div className="hidden md:flex flex-col items-end col-span-1 pt-1 text-sm text-neutral-500 font-mono">
-                                    <span>2024</span>
-                                    <span>2028</span>
+                                    <span>2024 &ndash; 2028</span>
                                 </div>
 
                                 {/* Timeline node */}
@@ -173,12 +179,10 @@ export const Experience = () => {
                                     <div className="flex items-center gap-2 mb-4 text-xs text-neutral-500 md:hidden font-mono">
                                         <Calendar className="w-3 h-3" /> Minor Specialization
                                     </div>
-                                    <div className="flex gap-4 flex-wrap">
-                                        <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-cyan/50 transition-colors">
-                                            <div className="text-xs text-neutral-500 mb-1">CGPA</div>
-                                            <div className="text-white font-bold text-lg">9.0 / 10</div>
-                                            <div className="text-xs text-neutral-500">(Specialization)</div>
-                                        </div>
+                                    <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-cyan/50 transition-colors">
+                                        <div className="text-xs text-neutral-500 mb-1">CGPA</div>
+                                        <div className="text-white font-bold text-lg">9.0 / 10</div>
+                                        <div className="text-xs text-neutral-500">(Specialization)</div>
                                     </div>
                                 </div>
                             </motion.div>
