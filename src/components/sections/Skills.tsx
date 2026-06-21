@@ -3,10 +3,11 @@
 import { motion } from "framer-motion";
 import {
     SiCplusplus, SiPython, SiJavascript,
-    SiReact, SiNodedotjs, SiExpress,
+    SiReact, SiNodedotjs, SiExpress, SiFastapi,
     SiOpencv, SiTensorflow, SiPytorch,
-    SiGit, SiDocker, SiLinux
+    SiGit, SiDocker, SiLinux, SiStreamlit
 } from "react-icons/si";
+import { BrainCircuit } from "lucide-react";
 import { TypewriterText } from "@/components/ui/TypewriterText";
 
 const skillsData = [
@@ -28,6 +29,7 @@ const skillsData = [
             { name: "React", icon: SiReact },
             { name: "Node", icon: SiNodedotjs },
             { name: "Express", icon: SiExpress },
+            { name: "FastAPI", icon: SiFastapi },
         ]
     },
     {
@@ -35,9 +37,10 @@ const skillsData = [
         color: "text-neon-pink",
         borderColor: "hover:border-neon-pink/50",
         items: [
-            { name: "OpenCV", icon: SiOpencv },
             { name: "TensorFlow", icon: SiTensorflow },
             { name: "PyTorch", icon: SiPytorch },
+            { name: "XGBoost", icon: BrainCircuit },
+            { name: "Streamlit", icon: SiStreamlit },
         ]
     },
     {

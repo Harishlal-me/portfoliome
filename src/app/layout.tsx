@@ -27,9 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
       <body
         className={`${outfit.variable} ${geistMono.variable} antialiased bg-background text-foreground selection:bg-neon-cyan selection:text-black`}
+        suppressHydrationWarning
       >
         <AnimatedCursor />
         <Navbar />

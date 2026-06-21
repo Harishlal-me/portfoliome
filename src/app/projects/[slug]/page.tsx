@@ -5,6 +5,22 @@ import { notFound } from "next/navigation";
 // Mock database for case studies
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const projectData: Record<string, any> = {
+    "the-last-ceo": {
+        title: "The Last CEO – AI Strategy Simulator",
+        description: "An AI-powered business strategy simulator where you lead a company through the AI revolution to 2035 — every quarterly decision is scored by a live XGBoost prediction engine.",
+        tech: ["FastAPI", "React", "XGBoost", "TypeScript", "Python"],
+        github: "https://github.com/shreyascode11/The-Last-CEO",
+        demo: "https://the-last-ceo-eight.vercel.app",
+        color: "text-neon-cyan",
+        bg: "bg-neon-cyan/10",
+        icon: Building2,
+        problem: "As organizations adopt Artificial Intelligence, business leaders face high-stakes decisions about investment, workforce transformation, and risk. Most business simulations lack realistic ML-backed scenarios or fail to show long-term AI strategy impacts.",
+        solution: "A simulator where players make quarterly boardroom decisions, which are evaluated by a live XGBoost machine-learning model forecasting revenue impact and productivity gains.",
+        architecture: "React frontend with Zustand state and a 3D playable office (React Three Fiber), communicating via a FastAPI backend. XGBoost prediction engine runs inference, and SHAP powers explainability.",
+        features: ["Live ML Predictions (XGBoost)", "Explainable AI via SHAP", "AI Advisor (Groq Llama 3.1)", "Dynamic Crisis & Event Engine"],
+        challenges: "Integrating a live XGBoost model within a fast-paced game loop, normalizing complex inputs, and parsing SHAP attributions dynamically into plain English using an LLM.",
+        results: "Delivered an immersive educational simulator that realistically models 10-year LTV ROI and AI adoption, culminating in 8 distinct narrative endings."
+    },
     "cyberbullying-detection": {
         title: "Cyberbullying Detection System with BERT",
         description: "Fine-tuned a BERT model achieving 94.5% recall and 94.19% F1-score for cyberbullying detection with a safety-critical focus on minimizing false negatives. Deployed as a Streamlit web application and extended into an ICWSM 2026 research submission.",

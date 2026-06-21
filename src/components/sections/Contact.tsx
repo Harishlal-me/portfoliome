@@ -129,6 +129,7 @@ export const Contact = () => {
                                             disabled={status === "submitting"}
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors disabled:opacity-50"
                                             placeholder="Your Name"
+                                            suppressHydrationWarning
                                         />
                                     </div>
                                     <div>
@@ -141,6 +142,7 @@ export const Contact = () => {
                                             disabled={status === "submitting"}
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors disabled:opacity-50"
                                             placeholder="Your Email"
+                                            suppressHydrationWarning
                                         />
                                     </div>
                                     <div>
@@ -153,6 +155,7 @@ export const Contact = () => {
                                             disabled={status === "submitting"}
                                             className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-cyan transition-colors resize-none disabled:opacity-50"
                                             placeholder="Tell me about your project, idea, or opportunity..."
+                                            suppressHydrationWarning
                                         />
                                     </div>
                                 </div>
@@ -161,7 +164,7 @@ export const Contact = () => {
                                     <p className="text-red-400 text-sm">Something went wrong. Please try again or email me directly.</p>
                                 )}
 
-                                <Button variant="primary" type="submit" className="w-full" disabled={status === "submitting"}>
+                                <Button variant="primary" type="submit" className="w-full" disabled={status === "submitting"} suppressHydrationWarning>
                                     <Send className="w-4 h-4 mr-2" />
                                     {status === "submitting" ? "Sending..." : "Send Message"}
                                 </Button>

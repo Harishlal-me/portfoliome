@@ -9,6 +9,17 @@ import { TypewriterText } from "@/components/ui/TypewriterText";
 
 const projects = [
     {
+        title: "The Last CEO – AI Strategy Simulator",
+        slug: "the-last-ceo",
+        icon: Building2,
+        description: "Quarterly business-strategy simulation where decisions are scored by a live XGBoost prediction engine. Features an LLM strategic advisor (Llama 3.1) and SHAP-based explainability.",
+        tech: ["FastAPI", "React", "XGBoost", "scikit-learn"],
+        github: "https://github.com/shreyascode11/The-Last-CEO",
+        demo: "https://github.com/shreyascode11/The-Last-CEO",
+        color: "neon-cyan",
+        gradient: "from-cyan-500/20 to-cyan-900/20",
+    },
+    {
         title: "Cyberbullying Detection System with BERT",
         slug: "cyberbullying-detection",
         icon: ShieldCheck,

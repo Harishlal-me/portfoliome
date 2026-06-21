@@ -33,7 +33,48 @@ export const Experience = () => {
                         className="max-w-3xl mx-auto space-y-12"
                     >
 
-                        {/* Experience 1 */}
+                        {/* Experience 1 (Intern) */}
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, show: { opacity: 1, y: 0, transition: { duration: 0.6 } } }} className="relative pl-8 md:pl-0">
+                            <div className="md:hidden absolute left-0 top-0 bottom-0 w-px bg-neutral-800"></div>
+
+                            <motion.div
+                                whileHover={{ x: 5 }}
+                                className="relative md:grid md:grid-cols-5 gap-8 items-start group"
+                            >
+                                <div className="hidden md:flex flex-col items-end col-span-1 pt-1 text-sm text-neutral-500 font-mono">
+                                    <span>Jan 2026</span>
+                                    <span>Apr 2026</span>
+                                </div>
+
+                                {/* Timeline node */}
+                                <div className="absolute left-[-37px] md:static md:col-span-1 flex justify-center mt-1">
+                                    <div className="w-[10px] h-[10px] rounded-full bg-neon-cyan shadow-[0_0_10px_#00f0ff] ring-4 ring-neutral-950 group-hover:scale-150 transition-transform z-10" />
+                                    {/* Vertical Line for Desktop */}
+                                    <motion.div
+                                        initial={{ scaleY: 0 }}
+                                        whileInView={{ scaleY: 1 }}
+                                        transition={{ duration: 1, ease: "easeInOut" }}
+                                        className="hidden md:block absolute top-6 bottom-[-3rem] w-px bg-neutral-800 -z-10 left-[26%] origin-top"
+                                    />
+                                </div>
+
+                                <div className="md:col-span-3 pb-8">
+                                    <h3 className="text-xl font-bold text-white mb-1">AI/ML Intern</h3>
+                                    <div className="text-neon-cyan font-medium mb-3 flex items-center gap-2">
+                                        <Briefcase className="w-4 h-4" /> Innovexis (IntelliHire Staffing Solution)
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-4 text-xs text-neutral-500 md:hidden font-mono">
+                                        <Calendar className="w-3 h-3" /> Jan 2026 - Apr 2026
+                                    </div>
+                                    <ul className="space-y-2 text-neutral-400 text-sm leading-relaxed list-disc list-inside">
+                                        <li>Worked on data preprocessing, model development, training, and evaluation of machine learning algorithms for AI-driven solutions.</li>
+                                        <li>Applied Python and ML frameworks to build and evaluate models while strengthening practical problem-solving skills.</li>
+                                    </ul>
+                                </div>
+                            </motion.div>
+                        </motion.div>
+
+                        {/* Experience 2 */}
                         <motion.div variants={{ hidden: { opacity: 0, y: 50 }, show: { opacity: 1, y: 0, transition: { duration: 0.6 } } }} className="relative pl-8 md:pl-0">
                             <div className="md:hidden absolute left-0 top-0 bottom-0 w-px bg-neutral-800"></div>
 
@@ -148,8 +189,8 @@ export const Experience = () => {
                                     </div>
                                     <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-pink/50 transition-colors">
                                         <div className="text-xs text-neutral-500 mb-1">CGPA</div>
-                                        <div className="text-white font-bold text-lg">9.51 / 10</div>
-                                        <div className="text-xs text-neutral-500">(up to 3rd semester)</div>
+                                        <div className="text-white font-bold text-lg">9.50 / 10</div>
+                                        <div className="text-xs text-neutral-500">(Overall CGPA)</div>
                                     </div>
                                 </div>
                             </motion.div>
@@ -182,7 +223,7 @@ export const Experience = () => {
                                     </div>
                                     <div className="p-3 rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neon-cyan/50 transition-colors">
                                         <div className="text-xs text-neutral-500 mb-1">CGPA</div>
-                                        <div className="text-white font-bold text-lg">9.0 / 10</div>
+                                        <div className="text-white font-bold text-lg">9.50 / 10</div>
                                         <div className="text-xs text-neutral-500">(Specialization)</div>
                                     </div>
                                 </div>

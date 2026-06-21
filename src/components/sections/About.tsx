@@ -35,7 +35,7 @@ export const About = () => {
                             className="space-y-6 text-neutral-400 text-lg leading-relaxed"
                         >
                             <motion.p variants={{ hidden: { opacity: 0, x: -20 }, show: { opacity: 1, x: 0 } }}>
-                                I am a <strong className="text-white font-medium">second-year B.Tech CSE undergraduate</strong> (CGPA 9.51) at SRM IST, Chennai — with hands-on experience in full-stack development, database systems, and machine learning.
+                                I am a <strong className="text-white font-medium">Third-year B.Tech CSE undergraduate</strong> (CGPA 9.50) at SRM IST, Chennai — with hands-on experience in full-stack development, database systems, and machine learning.
                             </motion.p>
                             <motion.p variants={{ hidden: { opacity: 0, x: -20 }, show: { opacity: 1, x: 0 } }}>
                                 Particularly strong in NLP — built safety-critical BERT-based systems achieving <strong className="text-neon-purple font-medium">94.5% recall</strong> with an active <strong className="text-neon-cyan font-medium">ICWSM 2026</strong> research submission.
