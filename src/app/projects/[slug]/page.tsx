@@ -1,10 +1,26 @@
-import { ArrowLeft, Github, ExternalLink, ShieldCheck, Building2, TrendingUp, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, ShieldCheck, Building2, TrendingUp, CheckCircle2, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 // Mock database for case studies
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const projectData: Record<string, any> = {
+    "speakscense": {
+        title: "SpeakScense — AI Language Coach",
+        description: "An advanced AI-powered language coaching application designed to provide dynamic and contextual language learning experiences through real-time grammar, fluency, and pronunciation feedback.",
+        tech: ["React", "FastAPI", "Python", "SQLite", "Groq API"],
+        github: "https://github.com/Harishlal-me/speaskscenseAI",
+        demo: "",
+        color: "text-neon-pink",
+        bg: "bg-neon-pink/10",
+        icon: MessageSquare,
+        problem: "Traditional language learning apps often lack organic, context-aware conversations and fail to provide granular, sentence-level feedback on nuances like pronunciation and native phrasing.",
+        solution: "A dynamic coaching platform that engages users in realistic scenarios (like job interviews or casual chats) and scores them in real time. It uses advanced LLMs to generate 'Good', 'Better', and 'Best' iterations of their input.",
+        architecture: "React frontend handles interactive audio/text coaching UI, connecting to a Python FastAPI backend. The API layer structures strict prompt templates sent to the Groq API, while a local SQLite database tracks user performance history.",
+        features: ["Dynamic Scenario Coaching", "Intelligent Level Detection", "Granular Phrasing Feedback (Good/Better/Best)", "Targeted Pronunciation Tips", "Session Scoring Analysis"],
+        challenges: "Enforcing strict JSON grammar on the Groq LLM API to ensure highly structured pedagogical feedback without sacrificing the natural flow of the conversational coaching persona.",
+        results: "Delivered a fully functional AI-driven tutoring platform that acts as a personalized linguistic coach, accurately bridging the gap between basic vocabulary memorization and true conversational fluency."
+    },
     "chatshield-ai": {
         title: "ChatShield AI — Content Moderation",
         description: "An intelligent, dual-mode AI assistant for cyberbullying detection and content moderation training. Built with a fine-tuned BERT classifier and a local LLaMA 3.2 LLM via Ollama.",

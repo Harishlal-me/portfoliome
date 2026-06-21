@@ -1,13 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, ExternalLink, ArrowRight, ShieldCheck, Building2, TrendingUp } from "lucide-react";
+import { Github, ExternalLink, ArrowRight, ShieldCheck, Building2, TrendingUp, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import { useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import { TypewriterText } from "@/components/ui/TypewriterText";
 
 const projects = [
+    {
+        title: "SpeakScense — AI Language Coach",
+        slug: "speakscense",
+        icon: MessageSquare,
+        description: "An advanced AI-powered language coaching application providing dynamic conversational scenarios and real-time, granular feedback on grammar and pronunciation.",
+        tech: ["React", "FastAPI", "SQLite", "Groq API"],
+        github: "https://github.com/Harishlal-me/speaskscenseAI",
+        demo: "https://github.com/Harishlal-me/speaskscenseAI",
+        color: "neon-pink",
+        gradient: "from-pink-500/20 to-pink-900/20",
+    },
     {
         title: "ChatShield AI — Content Moderation",
         slug: "chatshield-ai",
