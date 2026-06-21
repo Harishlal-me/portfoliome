@@ -9,6 +9,17 @@ import { TypewriterText } from "@/components/ui/TypewriterText";
 
 const projects = [
     {
+        title: "ChatShield AI — Content Moderation",
+        slug: "chatshield-ai",
+        icon: ShieldCheck,
+        description: "An intelligent, dual-mode AI assistant for cyberbullying detection and content moderation training. Built with a fine-tuned BERT classifier and a local LLaMA 3.2 LLM via Ollama.",
+        tech: ["FastAPI", "React", "BERT", "LLaMA 3.2"],
+        github: "https://github.com/Harishlal-me/contentmoderationchatbot",
+        demo: "https://github.com/Harishlal-me/contentmoderationchatbot",
+        color: "neon-purple",
+        gradient: "from-purple-500/20 to-purple-900/20",
+    },
+    {
         title: "The Last CEO – AI Strategy Simulator",
         slug: "the-last-ceo",
         icon: Building2,

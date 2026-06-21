@@ -5,6 +5,22 @@ import { notFound } from "next/navigation";
 // Mock database for case studies
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const projectData: Record<string, any> = {
+    "chatshield-ai": {
+        title: "ChatShield AI — Content Moderation",
+        description: "An intelligent, dual-mode AI assistant for cyberbullying detection and content moderation training. Built with a fine-tuned BERT classifier and a local LLaMA 3.2 LLM via Ollama.",
+        tech: ["React", "FastAPI", "BERT", "LLaMA 3.2", "PyTorch"],
+        github: "https://github.com/Harishlal-me/contentmoderationchatbot",
+        demo: "",
+        color: "text-neon-purple",
+        bg: "bg-neon-purple/10",
+        icon: ShieldCheck,
+        problem: "Public-facing chatbots often refuse to process offensive content entirely. Content moderators and researchers need a specialized, clinical-grade tool that can analyze cyberbullying and toxicity without refusal, providing detailed explanations for training purposes.",
+        solution: "A dual-mode intelligent chatbot that seamlessly switches between a friendly conversational mode and a strict, structured per-sentence analysis mode depending on user intent, powered by a fine-tuned BERT classifier and a local LLaMA 3.2 instance.",
+        architecture: "React/Vite frontend communicates via FastAPI streaming endpoints with a Python backend. A chat controller routes inputs through intent detection, a PyTorch-based BERT classifier for threat scoring, and an Ollama HTTP client for LLM generation.",
+        features: ["Dual-Mode AI (Chat vs. Strict Analysis)", "Per-sentence toxicity classification with explanations", "AI-generated Quizzes & Assessment Modules", "Real-time streaming & BERT diagnostic panels"],
+        challenges: "Designing a robust two-layer intent detection system to prevent simple queries from triggering the strict analysis mode, and orchestrating smooth word-by-word streaming from a local Ollama instance through FastAPI to the frontend.",
+        results: "Successfully built a robust, production-grade AI platform capable of real-time clinical content moderation analysis and interactive user training, all while keeping model inference localized and secure."
+    },
     "the-last-ceo": {
         title: "The Last CEO – AI Strategy Simulator",
         description: "An AI-powered business strategy simulator where you lead a company through the AI revolution to 2035 — every quarterly decision is scored by a live XGBoost prediction engine.",
